@@ -8,7 +8,7 @@
     <b class="promo__lead-title">
       Взгляните на жизнь иначе!
     </b>
-    <a href="https://www.apple.com/ru/app-store/" class="promo__link-download">
+    <a href="https://www.apple.com/ru/app-store/" class="promo__download-link">
       Скачать приложение
     </a>
     <ul class="promo__app-list">
@@ -32,6 +32,7 @@
       Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
     </em>
   </section>
+
   <section class="offer">
     <h2 class="Visually-hidden">
       Раздел с преимуществами приложения.
@@ -82,7 +83,7 @@
           что положительный эффект от использования приложения
           длится целые сутки!
         </p>
-        <a href="#!" class="blurb__link">Узнать больше об исследовании</a>
+        <a class="blurb__link" href="#!">Узнать больше об исследовании</a>
       </li>
     </ul>
   </section>
@@ -100,29 +101,30 @@
         </blockquote>
       </li>
     </ul>
-    <ul class="reviews  switch-buttons">
+    <ul class="switch-buttons reviews__switch-buttons">
       <li class="switch-buttons__item">
-        <button class="switch-buttons__button" type="button"></button>
+        <button class="switch-buttons__button" type="button" aria-label="К отзыву 1"></button>
       </li>
       <li class="switch-buttons__item">
-        <button class="switch-buttons__button" type="button"></button>
+        <button class="switch-buttons__button" type="button" aria-label="К отзыву 2"></button>
       </li>
       <li class="switch-buttons__item">
-        <button class="switch-buttons__button" type="button"></button>
+        <button class="switch-buttons__button" type="button" aria-label="К отзыву 3"></button>
       </li>
     </ul>
   </section>
+
   <section class="tariffs">
     <h2 class="visually-hidden">Тарифы.</h2>
     <table class="tariffs__table">
       <thead class="tariffs__table-head">
-        <tr class="tariffs__table-row">
-          <th class="tariffs__head">
+        <tr class="tariffs__row">
+          <th scope="col">
             <span class="visually-hidden">
               Название тарифа.
             </span>
           </th>
-          <th class="tariffs__head">
+          <th class="tariffs__head" scope="col">
             <p class="tariffs__tariff-name">
               База
             </p>
@@ -130,7 +132,7 @@
               1,99 USD
             </p>
           </th>
-          <th class="tariffs__head">
+          <th class="tariffs__head" scope="col">
             <p class="tariffs__tariff-name">
               Стандарт
             </p>
@@ -138,7 +140,7 @@
               3,99 USD
             </p>
           </th>
-          <th class="tariffs__head">
+          <th class="tariffs__head" scope="col">
             <p class="tariffs__tariff-name">
               Анлим
             </p>
@@ -149,8 +151,8 @@
         </tr>
       </thead>
       <tbody class="tariffs__table-body">
-        <tr class="tariffs__table-row">
-          <th class="tariffs__head">Розовый фильтр</th>
+        <tr class="tariffs__row">
+          <th class="tariffs__cell tariffs__cell--head" scope="row">Розовый фильтр</th>
           <td class="tariffs__cell">
             <p class="tariffs__value tariffs__value--yes">
               <span class="visually-hidden">Да.</span>
@@ -167,8 +169,8 @@
             </p>
           </td>
         </tr>
-        <tr class="tariffs__table-row">
-          <th class="tariffs__head">Смайлики</th>
+        <tr class="tariffs__row">
+          <th class="tariffs__cell tariffs__cell--head" scope="row">Смайлики</th>
           <td class="tariffs__cell">
             <p class="tariffs__value tariffs__value--no">
               <span class="visually-hidden">Нет.</span>
@@ -185,8 +187,8 @@
             </p>
           </td>
         </tr>
-        <tr class="tariffs__table-row">
-          <th class="tariffs__head">Комментарии</th>
+        <tr class="tariffs__row">
+          <th class="tariffs__cell tariffs__cell--head" scope="row">Комментарии</th>
           <td class="tariffs__cell">
             <p class="tariffs__value tariffs__value--no">
               <span class="visually-hidden">Нет.</span>
@@ -205,21 +207,22 @@
         </tr>
       </tbody>
     </table>
-    <ul class="tariffs  switch-buttons">
+    <ul class="switch-buttons tariffs__switch-buttons">
       <li class="switch-buttons__item">
-        <button class="switch-buttons__button" type="button"></button>
+        <button class="switch-buttons__button" type="button" aria-label="К тарифу 1"></button>
       </li>
       <li class="switch-buttons__item">
-        <button class="switch-buttons__button" type="button"></button>
+        <button class="switch-buttons__button" type="button" aria-label="К тарифу 2"></button>
       </li>
       <li class="switch-buttons__item">
-        <button class="switch-buttons__button" type="button"></button>
+        <button class="switch-buttons__button" type="button" aria-label="К тарифу 3"></button>
       </li>
     </ul>
   </section>
+
   <section class="contacts">
     <h2 class="visually-hidden">
-      Раздел с обратной связью.
+      Контакты.
     </h2>
     <p class="contacts__feedback">
       Остались вопросы? Свяжитесь с нами!
@@ -227,21 +230,19 @@
     <ul class="contacts__list">
       <li class="contacts__item">
         <span class="contacts__choice">Звоните:</span>
-        <a href="tel:+78125556666" class="contacts__link">
+        <a class="contacts__link" href="tel:+78125556666">
           +7 (812) 555-66-66
         </a>
       </li>
       <li class="contacts__item">
         <span class="contacts__choice">Пишите:</span>
-        <a href="contacts__link" href="mailto:mail@htmlacademy.ru">
+        <a class="contacts__link" href="mailto:mail@htmlacademy.ru">
           mail@htmlacademy.ru
         </a>
       </li>
       <li class="contacts__item">
-        <span class="contacts__choice">
-          Приезжайте в гости:
-        </span>
-        <a href="#!" class="contacts__link">
+        <span class="contacts__choice">Приезжайте в гости:</span>
+        <a class="contacts__link" href="#!">
           ул. Большая Конюшенная, 19/8
         </a>
       </li>
